@@ -24,31 +24,33 @@ num-derive = "0.4"
 num-traits = "0.2"
 serde = "1.0.228"
 serde_derive = "1.0.193"
-solana-account = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-account-info = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-bincode = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-account = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-account-info = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-bincode = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
 solana-client = { git = "https://github.com/jupnet/jupnet-svm", branch = "fix/v3.1.2-script-build" }
 solana-config-interface = { version = "2.0.0", path = "interface" }
-solana-hash = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-instruction = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-msg = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-program = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-program-entrypoint = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-pubkey = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-sdk = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-sdk-ids = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-short-vec = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-solana-rent = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+solana-hash = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-instruction = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-msg = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-program = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-program-entrypoint = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-program-error = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-pubkey = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-sdk = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-sdk-ids = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-short-vec = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-system-interface = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+solana-rent = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
 thiserror = "2.0.17"
 
 [workspace.metadata.spellcheck]
 config = "scripts/spellcheck.toml"
 
 [patch.crates-io]
-jupnet-signature = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-jupnet-signer = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
-spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
-spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
-spl-discriminator = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps" }
+jupnet-signature = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+jupnet-signer = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps-test" }
+# Patch mollusk to use jupnet fork
+mollusk-svm = { git = "https://github.com/jupnet/mollusk", branch = "fix/sdk-deps-test" }
+spl-pod = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps-test" }
+spl-type-length-value = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps-test" }
+spl-discriminator = { git = "https://github.com/jupnet/libraries", branch = "fix/sdk-deps-test" }
